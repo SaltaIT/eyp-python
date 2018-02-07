@@ -1,5 +1,5 @@
 Puppet::Type.type(:pythonpip).provide(:pythonpip) do
-  desc 'chattr'
+  desc 'pip'
 
   commands :pip => '/usr/bin/pip'
 
