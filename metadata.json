@@ -2,7 +2,7 @@
   "name": "eyp-python",
   "version": "0.1.6",
   "author": "eyp",
-  "summary": "python setup and pip packages management",
+  "summary": "python setup and pip package management",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-python",
   "project_page": "https://github.com/NTTCom-MS/eyp-python",
