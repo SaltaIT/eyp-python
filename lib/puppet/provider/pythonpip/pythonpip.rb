@@ -3,7 +3,6 @@ Puppet::Type.type(:pythonpip).provide(:pythonpip) do
 
   commands :pip => '/usr/bin/pip'
 
-
   if Puppet::Util::Package.versioncmp(Puppet.version, '3.0') >= 0
     has_command(:pip, '/usr/bin/pip') do
       is_optional

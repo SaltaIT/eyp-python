@@ -1,4 +1,3 @@
-#
 class python inherits python::params {
 
   Exec {
