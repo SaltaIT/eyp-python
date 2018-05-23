@@ -1,6 +1,6 @@
 {
   "name": "eyp-python",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "eyp",
   "summary": "python setup and pip package management",
   "license": "Apache-2.0",
@@ -34,7 +34,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04", "16.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04", "18.04" ]
     },
     {
       "operatingsystem": "SLES",
