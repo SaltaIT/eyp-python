@@ -44,6 +44,7 @@ class python::params {
     }
     'Suse':
     {
+      $include_epel=false
       case $::operatingsystem
       {
         'SLES':
