@@ -57,7 +57,7 @@ class python::params {
               $repo_name='Python Modules (SLE_11_SP4)'
               $python_pkgs= [ 'python', 'python-pip' ]
             }
-            /^12.3$/:
+            '12.3':
             {
               $repo_url=undef
               $repo_name=undef
