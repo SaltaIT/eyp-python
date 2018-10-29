@@ -3,6 +3,7 @@
 ## 0.1.8
 
 * added SLES12SP3 support
+* added **manage_package** variable
 
 ## 0.1.7
 

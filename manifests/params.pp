@@ -49,12 +49,15 @@ class python::params {
       {
         'SLES':
         {
+          #http://ftp1.nluug.nl/os/Linux/distr/opensuse/repositories/openSUSE:/infrastructure/SLE_11_SP4/x86_64/python-pip-9.0.1-3.1.x86_64.rpm
           case $::operatingsystemrelease
           {
             /^11.[34]$/:
             {
-              $repo_url='http://download.opensuse.org/repositories/devel:/languages:/python/SLE_11_SP4/devel:languages:python.repo'
-              $repo_name='Python Modules (SLE_11_SP4)'
+              # $repo_url='http://download.opensuse.org/repositories/devel:/languages:/python/SLE_11_SP4/devel:languages:python.repo'
+              # $repo_name='Python Modules (SLE_11_SP4)'
+              $repo_url=undef
+              $repo_name=undef
               $python_pkgs= [ 'python', 'python-pip' ]
             }
             '12.3':
