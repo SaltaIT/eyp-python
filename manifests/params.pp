@@ -60,7 +60,7 @@ class python::params {
               $repo_name=undef
               $python_pkgs= [ 'python', 'python-pip' ]
             }
-            '12.3':
+            /^12.[34]/:
             {
               $repo_url=undef
               $repo_name=undef
