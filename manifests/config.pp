@@ -1,5 +1,9 @@
 class python::config inherits python {
 
+  Exec {
+    path => '/bin:/sbin:/usr/bin:/usr/sbin',
+  }
+
   if($python::params::set_alternative_python!=undef)
   {
     alternatives::set { 'python':
