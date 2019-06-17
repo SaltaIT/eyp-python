@@ -12,10 +12,18 @@ class python::params {
         /^[56].*$/:
         {
           $python_pkgs= [ 'python', 'python-pip' ]
+          $set_alternative_python=undef
         }
         /^7.*$/:
         {
           $python_pkgs= [ 'python', 'python2-pip' ]
+          $set_alternative_python=undef
+        }
+        /^8.*$/:
+        {
+          $python_pkgs= [ 'python3', 'python3-pip' ]
+          $set_alternative_python='/usr/bin/python3'
+          $set_alternative_pip='/usr/bin/pip3'
         }
         default: { fail("Unsupported RHEL/CentOS version! - ${::operatingsystemrelease}")  }
       }
@@ -25,6 +33,8 @@ class python::params {
       $include_epel=false
       $repo_url=undef
       $repo_name=undef
+      $set_alternative_python=undef
+      $set_alternative_pip=undef
       case $::operatingsystem
       {
         'Ubuntu':
@@ -45,6 +55,8 @@ class python::params {
     'Suse':
     {
       $include_epel=false
+      $set_alternative_python=undef
+      $set_alternative_pip=undef
       case $::operatingsystem
       {
         'SLES':

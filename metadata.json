@@ -1,6 +1,6 @@
 {
   "name": "eyp-python",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "author": "eyp",
   "summary": "python setup and pip package management",
   "license": "Apache-2.0",
@@ -9,28 +9,29 @@
   "issues_url": "https://github.com/NTTCom-MS/eyp-nrpe/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0 < 9.9.9"},
+    {"name":"eyp/alternatives","version_requirement":">= 0.1.0 < 0.2.0"},
     {"name":"eyp/epel","version_requirement":">= 1.0.0 < 9.9.9"}
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [ "6", "7" ]
+      "operatingsystemrelease": [ "6", "7", "8" ]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [ "6", "7" ]
+      "operatingsystemrelease": [ "6", "7", "8" ]
     },
     {
       "operatingsystem": "Scientific",
-      "operatingsystemrelease": [ "6", "7" ]
+      "operatingsystemrelease": [ "6", "7", "8" ]
     },
     {
       "operatingsystem": "OEL",
-      "operatingsystemrelease": [ "6", "7" ]
+      "operatingsystemrelease": [ "6", "7", "8" ]
     },
     {
       "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [ "6", "7" ]
+      "operatingsystemrelease": [ "6", "7", "8" ]
     },
     {
       "operatingsystem": "Ubuntu",

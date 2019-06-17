@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.1.10
+
+* added RHEL8 support
+* updated dependencies: added **eyp-alternatives**
+
 ## 0.1.9
 
 * added SLES12SP4 support
