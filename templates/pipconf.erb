@@ -1,0 +1,7 @@
+[global]
+<% if defined?(@pip_timeout) -%>
+timeout = <%= @pip_timeout %>
+<% end -%>
+<% if defined?(@pip_index_url) -%>
+index-url = <%= @pip_index_url %>
+<% end -%>

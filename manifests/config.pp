@@ -31,6 +31,7 @@ class python::config inherits python {
       owner   => 'root',
       group   => 'root',
       mode    => '0750',
+      content => template("${module_name}/pipconf.erb"),
       require => Exec['mkdir home pip config'],
     }
   }
