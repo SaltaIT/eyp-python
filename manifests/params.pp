@@ -13,11 +13,13 @@ class python::params {
         {
           $python_pkgs= [ 'python', 'python-pip' ]
           $set_alternative_python=undef
+          $set_alternative_pip=undef
         }
         /^7.*$/:
         {
           $python_pkgs= [ 'python', 'python2-pip' ]
           $set_alternative_python=undef
+          $set_alternative_pip=undef
         }
         /^8.*$/:
         {
