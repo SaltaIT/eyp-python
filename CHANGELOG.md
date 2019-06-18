@@ -2,7 +2,7 @@
 
 ## 0.1.11
 
-* added **index_url** option to resouce **pythonpip**
+* added **index_url** and **trusted_host** options to resouce **pythonpip**
 * EPEL is not needed on RHEL8
 
 ## 0.1.10
