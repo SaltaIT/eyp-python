@@ -35,7 +35,12 @@ Puppet::Type.type(:pythonpip).provide(:pythonpip) do
 
   def create
     debug "call create()"
-    pip(['install', resource[:name] ])
+    install_cmd = []
+    install_cmd.push('install')
+    command.push("--index-url", resource[:index_url]) if resource[:index_url]
+    install_cmd.push(resource[:name])
+
+    pip(install_cmd)
   end
 
   def destroy

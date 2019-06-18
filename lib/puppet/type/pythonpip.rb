@@ -7,6 +7,10 @@ Puppet::Type.newtype(:pythonpip) do
     'python-pip'
   end
 
+  newparam(:index_url) do
+    desc "PIP mirror to use"
+  end
+
   newparam(:name, :namevar => true) do
     desc 'package to manage'
 
