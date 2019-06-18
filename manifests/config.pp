@@ -13,6 +13,12 @@ class python::config inherits python {
 
   if($python::params::set_alternative_pip!=undef)
   {
+    alternatives::install { 'pip':
+      path => $python::params::set_alternative_pip,
+    }
+
+    ->
+
     alternatives::set { 'pip':
       path => $python::params::set_alternative_pip,
     }
