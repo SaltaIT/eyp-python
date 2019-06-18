@@ -37,7 +37,7 @@ Puppet::Type.type(:pythonpip).provide(:pythonpip) do
     debug "call create()"
     install_cmd = []
     install_cmd.push('install')
-    command.push("--index-url", resource[:index_url]) if resource[:index_url]
+    install_cmd.push("--index-url", resource[:index_url]) if resource[:index_url]
     install_cmd.push(resource[:name])
 
     pip(install_cmd)
