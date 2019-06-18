@@ -7,5 +7,5 @@ pythonpip { 'penisipsum':
 pythonpip { 'nagiosplugin':
   ensure       => 'present',
   index_url    => 'http://pipmirror.cm.nttcom.ms',
-  trusted_host => true,
+  trusted_host => 'pipmirror.cm.nttcom.ms',
 }
