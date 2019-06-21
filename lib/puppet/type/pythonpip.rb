@@ -7,12 +7,12 @@ Puppet::Type.newtype(:pythonpip) do
     'python-pip'
   end
 
-  newparam(:index_url, :namevar => false) do
+  newparam(:index_url) do
     desc "PIP mirror to use"
   end
 
   #--trusted-host
-  newparam(:trusted_host, :namevar => false) do
+  newparam(:trusted_host) do
     desc "set if this mirror is trusted"
   end
 
