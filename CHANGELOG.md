@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.12
+
+* pythonpip namevar false to index_url
+
 ## 0.1.11
 
 * added **index_url** and **trusted_host** options to resouce **pythonpip**

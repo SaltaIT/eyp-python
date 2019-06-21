@@ -1,6 +1,6 @@
 {
   "name": "eyp-python",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "author": "eyp",
   "summary": "python setup and pip package management",
   "license": "Apache-2.0",
