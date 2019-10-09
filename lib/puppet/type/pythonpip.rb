@@ -16,6 +16,10 @@ Puppet::Type.newtype(:pythonpip) do
     desc "set if this mirror is trusted"
   end
 
+  newparam(:file) do
+    desc "pip package to install"
+  end
+
   newparam(:name, :namevar => true) do
     desc 'package to manage'
 

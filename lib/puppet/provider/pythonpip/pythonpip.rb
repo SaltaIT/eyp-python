@@ -39,7 +39,12 @@ Puppet::Type.type(:pythonpip).provide(:pythonpip) do
     install_cmd.push('install')
     install_cmd.push("--index-url", resource[:index_url]) if resource[:index_url]
     install_cmd.push("--trusted-host", resource[:trusted_host]) if resource[:trusted_host]
-    install_cmd.push(resource[:name])
+
+    if resource[:file]
+      install_cmd.push(resource[:file])
+    else
+      install_cmd.push(resource[:name])
+    end
 
     pip(install_cmd)
   end

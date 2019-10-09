@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.13
+
+* Allow installation of  pip packages from files
+
 ## 0.1.12
 
 * pythonpip namevar false to index_url
