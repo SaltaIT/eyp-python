@@ -15,7 +15,7 @@
 
 ## 0.1.10
 
-* added RHEL8 support
+* added **RHEL8** support
 * updated dependencies: added **eyp-alternatives**
 
 ## 0.1.9
