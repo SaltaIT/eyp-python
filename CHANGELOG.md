@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.14
+
+* Added pythonpip3 resource
+
 ## 0.1.13
 
 * Allow installation of  pip packages from files
