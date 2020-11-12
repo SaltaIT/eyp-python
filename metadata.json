@@ -4,9 +4,9 @@
   "author": "eyp",
   "summary": "python setup and pip package management",
   "license": "Apache-2.0",
-  "source": "https://github.com/NTTCom-MS/eyp-python",
-  "project_page": "https://github.com/NTTCom-MS/eyp-python",
-  "issues_url": "https://github.com/NTTCom-MS/eyp-nrpe/issues",
+  "source": "https://github.com/SaltaIT/eyp-python",
+  "project_page": "https://github.com/SaltaIT/eyp-python",
+  "issues_url": "https://github.com/SaltaIT/eyp-nrpe/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0 < 9.9.9"},
     {"name":"eyp/alternatives","version_requirement":">= 0.1.0 < 0.2.0"},
