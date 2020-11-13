@@ -1,6 +1,6 @@
 {
   "name": "eyp-python",
-  "version": "0.1.14",
+  "version": "1.0.14",
   "author": "Jordi Prats",
   "summary": "python setup and pip package management",
   "license": "Apache-2.0",
